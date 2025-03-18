@@ -1,5 +1,6 @@
 click>= 8.0.3
 # cudatoolkit>= 10.2
+## 注意这里的faiss用的就是cpu版，换成gpu反而会在推理时报错，而且超级影响模型性能（用faiss-gpu训练精度大概会掉30%-40%！！！）
 faiss-cpu
 #faiss-gpu
 matplotlib>= 3.5.0
